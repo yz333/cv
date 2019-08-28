@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  text-align: center;
+  display: block;
+}
+
+h1 {
+  font-family: 'Merienda', cursive;
+  margin: 0;
+}
+
+p {
+  font-size: 20px;
+  font-family: 'Merienda', cursive;
+  margin: 0;
+  line-height: 3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.middle {
+  width: 100%;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  min-width: 950px;
+  min-height: 950px;
+  line-height: 2;
+}
+
+.image {
+  position: relative;
+  width: 100%;
+  background-color: #fcf9ea;
+}
+
+.coding {
+  position: relative;
+  width: 100%;
+}
+
+.hello {
+  font-size: 375%;
+  color: white;
+  position: absolute;
+  top: 48%;
+  left: 15%;
+  font-family: 'Merienda', cursive;
+  margin-top: 0;
+}
+
+.name {
+  font-size: 312.5%;
+  color: white;
+  position: absolute;
+  top: 58%;
+  left: 12%;
+  font-family: 'Acme', sans-serif;
+  margin-top: 0;
+}
+
+.location {
+  width: 200px;
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 60px;
+}
+
+.location-image {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+.tutor {
+  width: 25%;
+}
+
+.tutoring {
+  width: 25%;
+}
+
+.top-container {
+  background-color: #fcf9ea;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.middle-container {
+  background-color: #badfdb;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.sub-container {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+}
+
+.request {
+  clear: left;
+  text-align: center;
+}
+
+.text-location {
+  font-family: 'Acme', sans-serif;
+  font-size: 30px;
+}
+
+.email {
+  width: 20px;
+}
+
+.contact {
+  margin: 0;
+}
+
+.footer {
+  background-color: #ff8a5c;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.contact-me {
+  width: 50%;
+  margin: auto;
+  font-family: 'Merienda', cursive;
+}
