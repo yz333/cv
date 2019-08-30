@@ -6,6 +6,21 @@
   <title>Kaung Htun's portflio</title>
   <link rel="stylesheet" href="css/indexstyle.css">
   <link href="https://fonts.googleapis.com/css?family=Acme|Merienda|Sacramento&display=swap" rel="stylesheet">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript">
+  jQuery(document).ready(function() {
+    jQuery(".skillbar").each(function() {
+      jQuery(this)
+        .find(".skillbar-bar")
+        .animate(
+          {
+            width: jQuery(this).attr("data-percent")
+          },
+          6000
+        );
+    });
+  });
+  </script>
 </head>
 
 <body>
@@ -16,10 +31,43 @@
       <h2 class="name">I'm Kaung Htun</h2>
     </div>
     <div class="top-container">
-      <p>Who am I?</p>
+      <h1>Who am I?</h1>
       <img class="tutor" src="https://image.flaticon.com/icons/svg/1876/1876794.svg" alt="">
-      <p>I am a <strong>Teacher Assistant</strong> for CS111B(Java) and CS110A(Python)</p>
+      <p class="text-tutor">I am a computer science student who is interested and enthusiastic in programming and working as a <strong>Teacher Assistant and Tutor</strong> for CS111B(Java) and CS110A(Python)</p>
 
+    </div>
+    <div class="skill">
+      <h1>My Skills</h1>
+
+      <div class="skillbar clearfix " data-percent="70%">
+        <div class="skillbar-title" style="background: #d35400;"><span>Java</span></div>
+        <div class="skillbar-bar" style="background: #e67e22;"></div>
+        <div class="skill-bar-percent">70%</div>
+      </div>
+
+      <div class="skillbar clearfix " data-percent="60%">
+        <div class="skillbar-title" style="background: #2980b9;"><span>Python</span></div>
+        <div class="skillbar-bar" style="background: #3498db;"></div>
+        <div class="skill-bar-percent">60%</div>
+      </div>
+
+      <div class="skillbar clearfix " data-percent="90%">
+        <div class="skillbar-title" style="background: #333333;"><span>Html5</span></div>
+        <div class="skillbar-bar" style="background: #525252;"></div>
+        <div class="skill-bar-percent">90%</div>
+      </div>
+
+      <div class="skillbar clearfix " data-percent="100%">
+        <div class="skillbar-title" style="background: #27ae60;"><span>CSS</span></div>
+        <div class="skillbar-bar" style="background: #2ecc71;"></div>
+        <div class="skill-bar-percent">100%</div>
+      </div> <!-- End Skill Bar -->
+
+      <div class="skillbar clearfix " data-percent="55%">
+        <div class="skillbar-title" style="background: #124e8c;"><span>Javascript</span></div>
+        <div class="skillbar-bar" style="background: #4288d0;"></div>
+        <div class="skill-bar-percent">55%</div>
+      </div>
     </div>
     <div class="middle-container">
       <img class="tutoring" src="https://media.giphy.com/media/Plb36NP1B7qU8b0gQQ/giphy.gif" alt="">
@@ -27,7 +75,7 @@
 
       <div class="sub-container">
         <img class="location" src="https://media.giphy.com/media/dZiIqrrnW4YNo5RJr4/giphy.gif" alt="location">
-        <h1 class= "text-location">Where can you find me?</h1>
+        <h1 class="text-location">Where can you find me?</h1>
         <p>I will be at Academic Computing And Academic Resources Center.<br>Tuesday and Thursday<br>(10:00AM-11:00AM)</p>
         <p class="request"><strong>Please tell me beforehand in the class or email me if you want to meet me!</strong></p>
       </div>
@@ -41,7 +89,9 @@
       <div class="contact-me">
         <h3>Contact Me</h3>
         <a href="mailto:khtun2@mail.ccsf.eud"><img class="email" src="https://image.flaticon.com/icons/svg/732/732200.svg" alt=""></a>
-        <p class="contact">khtun2@mail.ccsf.edu</p>
+        <a href="mailto:khtun2@mail.ccsf.eud">
+          <p class="contact">khtun2@mail.ccsf.edu</p>
+        </a>
       </div>
 
     </div>
